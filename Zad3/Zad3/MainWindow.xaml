@@ -1,0 +1,12 @@
+﻿<Window x:Class="ShapeDrawingApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Shape Drawing App" Height="450" Width="800">
+    <Canvas Name="shapeCanvas" Background="LightGray">
+        <Button Content="Draw Ellipse" Click="DrawEllipse_Click" Width="100" Height="30" Canvas.Left="10" Canvas.Top="10"/>
+        <Button Content="Draw Line" Click="DrawLine_Click" Width="100" Height="30" Canvas.Left="120" Canvas.Top="10"/>
+        <Button Content="Draw Path" Click="DrawPath_Click" Width="100" Height="30" Canvas.Left="230" Canvas.Top="10"/>
+        <Button Content="Draw Polygon" Click="DrawPolygon_Click" Width="100" Height="30" Canvas.Left="340" Canvas.Top="10"/>
+        <Button Content="Draw Rectangle" Click="DrawRectangle_Click" Width="100" Height="30" Canvas.Left="450" Canvas.Top="10"/>
+    </Canvas>
+</Window>
