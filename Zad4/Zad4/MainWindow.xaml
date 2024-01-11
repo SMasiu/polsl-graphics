@@ -1,0 +1,17 @@
+﻿<Window x:Class="RGBtoHSVConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RGB to HSV Converter" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Enter RGB values (0-255):" Margin="0 0 0 5"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="txtRed" Width="50" Margin="0 0 5 0" Text="255"/>
+                <TextBox x:Name="txtGreen" Width="50" Margin="0 0 5 0" Text="255"/>
+                <TextBox x:Name="txtBlue" Width="50" Text="255"/>
+            </StackPanel>
+            <Button Content="Convert" Click="ConvertRGBtoHSV" Margin="0 10 0 5"/>
+            <TextBlock x:Name="txtResult" Text="" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>
